@@ -124,19 +124,29 @@ def inject_custom_styles() -> None:
             @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=IBM+Plex+Serif:wght@500;600&display=swap');
 
             :root {
-                --ink: #132338;
-                --muted-ink: #37506a;
-                --brand: #156c94;
-                --brand-soft: #d8ecf5;
-                --surface: #ffffffcc;
-                --line: #16324a1f;
+                --ink: #e9f1ff;
+                --muted-ink: #98abc8;
+                --brand: #2b82d9;
+                --brand-soft: #0f223d;
+                --surface: #0f1726cc;
+                --line: #3d5e864d;
             }
 
             .stApp {
                 background:
-                    radial-gradient(circle at 7% 0%, rgba(255, 221, 180, 0.42), transparent 34%),
-                    radial-gradient(circle at 96% 12%, rgba(186, 224, 246, 0.52), transparent 40%),
-                    linear-gradient(180deg, #f6f8fb 0%, #edf2f6 100%);
+                    radial-gradient(circle at 8% 0%, rgba(24, 56, 104, 0.5), transparent 34%),
+                    radial-gradient(circle at 96% 10%, rgba(34, 86, 150, 0.38), transparent 42%),
+                    linear-gradient(180deg, #04070d 0%, #0a101b 100%);
+            }
+
+            [data-testid="stHeader"] {
+                background: linear-gradient(180deg, rgba(6, 10, 18, 0.92) 0%, rgba(6, 10, 18, 0.45) 100%);
+                border-bottom: 1px solid #2e4a6d66;
+            }
+
+            [data-testid="stToolbar"] {
+                right: 1rem;
+                top: 0.5rem;
             }
 
             .block-container {
@@ -162,9 +172,9 @@ def inject_custom_styles() -> None:
                 padding: 24px;
                 margin-bottom: 1rem;
                 background:
-                    linear-gradient(120deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.82)),
-                    linear-gradient(45deg, #f8fcff 0%, #f8f7ff 100%);
-                box-shadow: 0 14px 36px rgba(17, 42, 66, 0.12);
+                    linear-gradient(120deg, rgba(12, 20, 33, 0.94), rgba(10, 16, 27, 0.86)),
+                    linear-gradient(45deg, #0b1628 0%, #0e1c34 100%);
+                box-shadow: 0 16px 38px rgba(2, 7, 14, 0.55);
             }
 
             .hero-title {
@@ -196,13 +206,13 @@ def inject_custom_styles() -> None:
                 font-size: 0.76rem;
                 letter-spacing: 0.04em;
                 text-transform: uppercase;
-                color: #44617b;
+                color: #87a0c2;
                 margin-bottom: 4px;
             }
 
             .status-value {
                 font-weight: 700;
-                color: #0f2740;
+                color: #e5efff;
                 font-size: 0.97rem;
             }
 
@@ -211,42 +221,86 @@ def inject_custom_styles() -> None:
                 border-radius: 16px;
                 background: var(--surface);
                 padding: 10px 10px 6px;
-                box-shadow: 0 10px 24px rgba(17, 42, 66, 0.08);
+                box-shadow: 0 10px 26px rgba(2, 7, 14, 0.45);
             }
 
             .note-card {
-                border: 1px dashed #2e5a7e66;
+                border: 1px dashed #4a78a866;
                 border-radius: 12px;
-                background: #f8fdff;
+                background: #0d192c;
                 padding: 12px 14px;
                 margin-top: 6px;
-                color: #25435d;
+                color: #c4d7f4;
             }
 
             .stButton button, .stDownloadButton button {
                 border-radius: 11px;
-                border: 1px solid #24557b;
+                border: 1px solid #3f79b3;
+                background: linear-gradient(180deg, #142842 0%, #101d31 100%);
+                color: #eaf2ff;
                 font-weight: 700;
                 transition: all 180ms ease;
             }
 
             .stButton button:hover, .stDownloadButton button:hover {
                 transform: translateY(-1px);
-                box-shadow: 0 6px 16px rgba(23, 72, 105, 0.22);
+                border-color: #5d95cc;
+                box-shadow: 0 6px 18px rgba(20, 52, 94, 0.35);
+            }
+
+            .stButton button[data-testid="baseButton-primary"] {
+                background: linear-gradient(180deg, #1d4e85 0%, #173e69 100%);
+                border-color: #2f6da8;
+                color: #f4f8ff;
+            }
+
+            div[data-testid="stFileUploader"] > label {
+                color: #dbe9ff;
+                font-weight: 700;
+            }
+
+            [data-testid="stFileUploaderDropzone"] {
+                background: linear-gradient(180deg, #0c1626 0%, #0a1321 100%);
+                border: 1.5px dashed #4d79aa;
+                border-radius: 14px;
+            }
+
+            [data-testid="stFileUploaderDropzone"]:hover {
+                border-color: #6da0d4;
+                background: linear-gradient(180deg, #0f1c30 0%, #0b1728 100%);
+            }
+
+            [data-testid="stFileUploaderDropzone"] small,
+            [data-testid="stFileUploaderDropzone"] span,
+            [data-testid="stFileUploaderDropzoneInstructions"] {
+                color: #a9c0df;
+            }
+
+            [data-testid="stFileUploaderDropzone"] button {
+                background: linear-gradient(180deg, #18406e 0%, #14355c 100%);
+                border: 1px solid #3f79b3;
+                color: #eef5ff;
+                border-radius: 10px;
+                font-weight: 700;
+            }
+
+            [data-testid="stFileUploaderDropzone"] button:hover {
+                border-color: #70a3d7;
+                box-shadow: 0 6px 16px rgba(18, 54, 98, 0.34);
             }
 
             [data-testid="stSidebar"] {
-                background: linear-gradient(180deg, #f8fbff 0%, #f1f7fb 100%);
+                background: linear-gradient(180deg, #080e18 0%, #0d1625 100%);
                 border-right: 1px solid var(--line);
             }
 
             div[data-testid="stImage"] img {
                 border-radius: 14px;
-                border: 1px solid #17324a2b;
-                box-shadow: 0 12px 26px rgba(17, 42, 66, 0.13);
+                border: 1px solid #3d5e8659;
+                box-shadow: 0 12px 28px rgba(2, 7, 14, 0.55);
                 max-height: 320px;
                 object-fit: contain;
-                background: #f8fbfd;
+                background: #0a131f;
             }
 
             @media (max-width: 900px) {
