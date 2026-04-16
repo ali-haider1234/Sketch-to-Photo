@@ -46,7 +46,7 @@ assignment3.2/
 ### 1) Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/ali-haider1234/Sketch-to-Photo>
 cd assignment3.2
 ```
 
