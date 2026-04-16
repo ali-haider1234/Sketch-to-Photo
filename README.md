@@ -39,6 +39,9 @@ assignment3.2/
 └── assignment-3-2 (1).ipynb
 ```
 
+## Live Demo
+
+[Click Here to Run on Browser] (https://sketch-to-photo-lmq2mjtpemoadzcpz9mfuu.streamlit.app/)
 ---
 
 ## Run Locally
@@ -84,18 +87,7 @@ Then open the local URL shown in your terminal (usually `http://localhost:8501`)
 
 ---
 
-## Deployment (Streamlit Community Cloud)
 
-1. Push this project to GitHub.
-2. Go to https://share.streamlit.io and sign in.
-3. Click **New app**.
-4. Select your repository and branch.
-5. Set **Main file path** to `app.py`.
-6. Click **Deploy**.
-
-Detailed steps are also available in `DEPLOYMENT.md`.
-
----
 
 ## Important Notes
 
