@@ -41,7 +41,7 @@ assignment3.2/
 
 ## Live Demo
 
-[Click Here to Run on Browser] (https://sketch-to-photo-lmq2mjtpemoadzcpz9mfuu.streamlit.app/)
+[Click Here to Run on Browser](https://sketch-to-photo-lmq2mjtpemoadzcpz9mfuu.streamlit.app/)
 ---
 
 ## Run Locally
